@@ -1,13 +1,13 @@
 {% set name = "ncbi-datasets-cli" %}
-{% set version = "12.10.0" %}
+{% set version = "12.10.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/ncbi/datasets/archive/release/{{ version }}.tar.gz
-  sha256: 8a24dd9a9ee536407695b60267bf2ad6fb1717d71aff6f2fbba273a8a7c56875
+  url: https://github.com/ncbi/datasets/archive/fix/correct-conda-build.tar.gz
+  sha256: 5a3bc77a321c9b500074248744e55548b1b7f78b9f3eccca207e7752eb2f39db
 
 build:
   number: 0
