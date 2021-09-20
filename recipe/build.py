@@ -47,8 +47,8 @@ if not os.path.exists(BIN_DIR):
     os.mkdir(BIN_DIR)
 
 # Build executables
-subprocess.run('bazel build --build_event_json_file=build_events.json //src:datasets //src:dataformat',
-               shell=True, stdout=sys.stdout, stderr=sys.stderr)
+subprocess.run('bazel build //src:datasets //src:dataformat',
+               shell=True, check=True, stdout=sys.stdout, stderr=sys.stderr)
 
 # Find and copy executables
 copy_output_files('build_events.json', BIN_DIR)
