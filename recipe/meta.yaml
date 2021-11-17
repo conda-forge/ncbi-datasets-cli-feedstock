@@ -10,7 +10,7 @@ source:
   sha256: af0538b0b0fa073a9819c66391f17b1f9e6bfe239be8a861e4ecbcd6b32738c4
 
 build:
-  number: 0
+  number: 1
   script: python {{ RECIPE_DIR }}/build.py
 
 requirements:
@@ -18,6 +18,8 @@ requirements:
     - bazel <4.0.0
     - go >=1.16.4
     - {{ compiler('cxx') }}
+  run:
+    - ca-certificates
 
 test:
   commands:
