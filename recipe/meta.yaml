@@ -1,5 +1,5 @@
 {% set name = "ncbi-datasets-cli" %}
-{% set version = "12.22.2" %}
+{% set version = "12.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/ncbi/datasets/archive/release/{{ version }}.tar.gz
-  sha256: 1a11d26626a6e76832208f52cde270dca8425281e39908aa466c2f67863f67a2
+  sha256: 4d9f6610bd8a31314d9152cc202cafd5c865b9c7cc89c29ca28d991f722a9fbd
 
 build:
-  number: 1
+  number: 0
   script: python {{ RECIPE_DIR }}/build.py
 
 requirements:
@@ -30,7 +30,7 @@ about:
   home: https://github.com/ncbi/datasets/tree/master/pkgs/ncbi-datasets-cli
   license: Public Domain
   license_file: pkgs/ncbi-datasets-cli/LICENSE.md
-  summary: 'NCBI Datasets command-line clients'
+  summary: NCBI Datasets command-line clients
   description: |
     NCBI Datasets is a new resource that lets you easily gather data from across NCBI databases.
 
