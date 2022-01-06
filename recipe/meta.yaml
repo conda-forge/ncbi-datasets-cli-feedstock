@@ -27,7 +27,7 @@ test:
     - dataformat version
 
 about:
-  home: https://github.com/ncbi/datasets/tree/master/pkgs/ncbi-datasets-cli
+  home: https://www.ncbi.nlm.nih.gov/datasets
   license: Public Domain
   license_file: pkgs/ncbi-datasets-cli/LICENSE.md
   summary: NCBI Datasets command-line clients

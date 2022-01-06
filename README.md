@@ -1,7 +1,7 @@
 About ncbi-datasets-cli
 =======================
 
-Home: https://github.com/ncbi/datasets/tree/master/pkgs/ncbi-datasets-cli
+Home: https://www.ncbi.nlm.nih.gov/datasets
 
 Package license: Public Domain
 
