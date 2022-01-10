@@ -1,5 +1,5 @@
 {% set name = "ncbi-datasets-cli" %}
-{% set version = "12.25.0" %}
+{% set version = "12.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ncbi/datasets/archive/release/{{ version }}.tar.gz
-  sha256: af7fefa51da63213c16f1c4989aa54a6d00e192cc190de3c21b9fa0de477cfe8
+  sha256: 66a07404c17a4f5192ecc5e1067917039f5a8d2e6f26f909ecc8150b80d668c2
 
 build:
   number: 0
@@ -27,7 +27,7 @@ test:
     - dataformat version
 
 about:
-  home: https://github.com/ncbi/datasets/tree/master/pkgs/ncbi-datasets-cli
+  home: https://www.ncbi.nlm.nih.gov/datasets
   license: Public Domain
   license_file: pkgs/ncbi-datasets-cli/LICENSE.md
   summary: NCBI Datasets command-line clients
