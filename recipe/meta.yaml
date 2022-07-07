@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ncbi/datasets/archive/release/{{ version }}.tar.gz
-  sha256: 8eb8aaff3e1c0de8d6a48d4953fba84bf10f5f886a8008e91686d03823a3348f
+  sha256: 950882ce8624db8af5d9b2548c4defe5b1e847e8ee7811fd44cfa88a923883b8
 
 build:
   number: 0
