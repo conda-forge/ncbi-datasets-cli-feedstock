@@ -31,6 +31,7 @@ about:
   license: Public Domain
   license_file: pkgs/ncbi-datasets-cli/LICENSE.md
   summary: NCBI Datasets command-line clients
+  doc_url: https://www.ncbi.nlm.nih.gov/datasets/docs/v1/
   description: |
     NCBI Datasets is a new resource that lets you easily gather data from across NCBI databases.
 
