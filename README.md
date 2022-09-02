@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ncbi-datasets-c
 
 Summary: NCBI Datasets command-line clients
 
+Documentation: https://www.ncbi.nlm.nih.gov/datasets/docs/v1/
+
 NCBI Datasets is a new resource that lets you easily gather data from across NCBI databases.
 
 
