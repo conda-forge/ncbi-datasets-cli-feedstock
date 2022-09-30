@@ -10,8 +10,8 @@ source:
   sha256: 12d6d2db62e27f36b39715f40c470a6d720816cfc37a40084163d97c75c73214
 
 build:
-  number: 0
-  script: python {{ RECIPE_DIR }}/build.py
+  number: 1
+  script: python {{ RECIPE_DIR }}/build.py {{ version }}
 
 requirements:
   build:
