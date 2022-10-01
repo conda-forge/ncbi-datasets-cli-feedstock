@@ -1,5 +1,5 @@
 {% set name = "ncbi-datasets-cli" %}
-{% set version = "13.39.1" %}
+{% set version = "13.41.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,13 @@ package:
 
 source:
   url: https://github.com/ncbi/datasets/archive/release/{{ version }}.tar.gz
-  sha256: 12d6d2db62e27f36b39715f40c470a6d720816cfc37a40084163d97c75c73214
+  sha256: d59b99401660701af1f75fbf0ef250bdbedc5d52f0dc4b7020f47ad69593dd77
 
 build:
-  number: 1
+  number: 0
   script: python {{ RECIPE_DIR }}/build.py {{ version }}
 
 requirements:
-  build:
-    - bazel <4.0.0
-    - go >=1.16.4
-    - {{ compiler('cxx') }}
   run:
     - ca-certificates
 
