@@ -1,11 +1,11 @@
-About ncbi-datasets-cli
-=======================
+About ncbi-datasets-cli-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ncbi-datasets-cli-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.ncbi.nlm.nih.gov/datasets
 
 Package license: Public Domain
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ncbi-datasets-cli-feedstock/blob/main/LICENSE.txt)
 
 Summary: NCBI Datasets command-line clients
 
