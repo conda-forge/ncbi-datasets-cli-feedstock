@@ -7,13 +7,24 @@ from zipfile import ZipFile
 
 
 def _determine_filename():
-    print(f"Platform: {platform.uname()}")
+    uname = platform.uname()
+    print(f"Platform: {uname}")
 
-    if platform.uname().system == "Darwin":
-        return "darwin-universal.cli.package.zip"
-    if platform.uname().system == "Windows":
-        return "windows-amd64.cli.package.zip"
-    return "linux-amd64.cli.package.zip"
+    match (uname.system, uname.machine):
+        case ("Darwin", _):
+            package_name = "darwin-universal.cli.package.zip"
+        case ("Linux", "x86_64"):
+            package_name = "linux-amd64.cli.package.zip"
+        case ("Linux", "armv7l" | "arm"):
+            package_name = "linux-arm.cli.package.zip"
+        case ("Linux", "aarch64" | "arm64"):
+            package_name = "linux-arm64.cli.package.zip"
+        case ("Windows", "AMD64" | "x86_64"):
+            package_name = "windows-amd64.cli.package.zip"
+        case (system, arch):
+            raise Exception(f"Unsupported platform: {system}-{arch}")
+
+    return package_name
 
 
 def _files(zipfile):

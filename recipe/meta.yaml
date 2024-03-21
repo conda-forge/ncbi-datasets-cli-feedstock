@@ -10,7 +10,7 @@ source:
   sha256: 7bfbdc1d2189c55f8f9216e17ffe6e8e46cc5dcb3d4c022e8bda0e4f426674b1
 
 build:
-  number: 1
+  number: 2
   script: python {{ RECIPE_DIR }}/build.py {{ version }}
 
 requirements:
@@ -29,7 +29,7 @@ about:
   summary: NCBI Datasets command-line clients
   doc_url: https://www.ncbi.nlm.nih.gov/datasets/docs/
   description: |
-    NCBI Datasets is a new resource that lets you easily gather data from across NCBI databases.
+    NCBI Datasets is a resource that lets you easily gather data from across NCBI databases.
 
 extra:
   recipe-maintainers:
