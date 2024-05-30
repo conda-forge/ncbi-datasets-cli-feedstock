@@ -203,5 +203,6 @@ Feedstock Maintainers
 =====================
 
 * [@BradHolmes](https://github.com/BradHolmes/)
+* [@corneliusroemer](https://github.com/corneliusroemer/)
 * [@wra3](https://github.com/wra3/)
 
