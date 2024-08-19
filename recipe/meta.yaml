@@ -1,5 +1,5 @@
 {% set name = "ncbi-datasets-cli" %}
-{% set version = "16.26.0" %}
+{% set version = "16.26.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ncbi/datasets/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 43e49fabf8dede560c0d545cf92933f5d30df029f07687272222f9a6da14f9bf
+  sha256: 7659639ba09285465563b1d44da82dfc2bddfb1ecb98437bc1e0c729970be308
 
 build:
   number: 0
